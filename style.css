@@ -1,0 +1,374 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Cormorant Garamond', serif;
+    background:#f6f6f6;
+    color:#111;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 0;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+.hero{
+    width:90%;
+    margin:auto;
+}
+
+.hero-content{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.hero h1{
+    font-size:50px;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:1100px;
+    width:100%;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.hero img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.about{
+    width:90%;
+    margin:180px auto;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:100px;
+}
+
+.about h2{
+    font-size:40px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.works{
+    width:90%;
+    margin:auto;
+}
+
+.works h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.project{
+    margin-bottom:100px;
+    border-bottom: 3px solid #d9d9d9;
+}
+
+.project img{
+    width:70%;
+    height:70%;
+    object-fit:cover;
+}
+
+.project-info{
+    margin-top:10px;
+    max-width:700px;
+}
+
+.project-info span{
+    font-size:15px;
+    color:#666;
+}
+
+.project-info h3{
+    font-size:25px;
+    margin:10px 0;
+}
+
+.project-info p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+.experience{
+    width:90%;
+    margin:auto;
+}
+
+.experience h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.experience-item{
+    margin-bottom:100px;
+    border-bottom: 3px solid #d9d9d9;
+}
+
+.experience-info{
+    margin-top:30px;
+    max-width:700px;
+}
+
+.experience-info span{
+    font-size:15px;
+    color:#666;
+}
+
+.experience-info h3{
+    font-size:25px;
+    margin:10px 0;
+}
+
+.experience-info p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+.certifications{
+    width:90%;
+    margin:auto;
+}
+
+.certifications h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.certifications-item{
+    margin-bottom:100px;
+    border-bottom: 3px solid #d9d9d9;
+}
+
+.certifications-info{
+    margin-top:30px;
+    max-width:700px;
+}
+
+.certifications-info span{
+    font-size:15px;
+    color:#666;
+}
+
+.certifications-info h3{
+    font-size:25px;
+    margin:10px 0;
+}
+
+.certifications-info p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+.contact{
+    width:90%;
+    margin:50px auto;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:18px;
+}
+
+/* =========================
+   TABLET (<= 992px)
+========================= */
+@media (max-width: 992px){
+
+    nav{
+        width:95%;
+        padding:25px 0;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        width:100%;
+        font-size:17px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        gap:40px;
+        margin:100px auto;
+    }
+
+    .about h2{
+        font-size:34px;
+    }
+
+    .works h2,
+    .experience h2,
+    .certifications h2,
+    .contact h2{
+        font-size:34px;
+    }
+
+    .project img{
+        width:100%;
+        height:auto;
+    }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        width:95%;
+    }
+
+    .hero h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        width:100%;
+        font-size:16px;
+    }
+
+    .hero img{
+        height:220px;
+    }
+
+    .about{
+        width:95%;
+        margin:80px auto;
+        gap:30px;
+    }
+
+    .about h2{
+        font-size:30px;
+    }
+
+    .about p{
+        font-size:16px;
+    }
+
+    .works,
+    .experience,
+    .certifications,
+    .contact{
+        width:95%;
+    }
+
+    .works h2,
+    .experience h2,
+    .certifications h2,
+    .contact h2{
+        font-size:30px;
+    }
+
+    .project,
+    .experience-item,
+    .certifications-item{
+        margin-bottom:60px;
+    }
+
+    .project-info h3,
+    .experience-info h3,
+    .certifications-info h3{
+        font-size:22px;
+    }
+
+    .project-info p,
+    .experience-info p,
+    .certifications-info p{
+        font-size:16px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size:26px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .about h2,
+    .works h2,
+    .experience h2,
+    .certifications h2,
+    .contact h2{
+        font-size:26px;
+    }
+
+    .project-info h3,
+    .experience-info h3,
+    .certifications-info h3{
+        font-size:20px;
+    }
+
+    .project-info p,
+    .experience-info p,
+    .certifications-info p,
+    .contact p{
+        font-size:15px;
+    }
+
+    .hero img{
+        height:180px;
+    }
+}
